@@ -1,0 +1,19 @@
+# Unity project (for when the source is added)
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+*.csproj
+*.sln
+*.pidb.meta
+*.pdb.meta
+
+# Debug symbols Unity says not to ship
+*_BurstDebugInformation_DoNotShip/
+
+# OS files
+.DS_Store
+Thumbs.db
