@@ -34,8 +34,6 @@ img.px { image-rendering: pixelated; display: block; }
 #flamebar > i { position: absolute; inset: 0 auto 0 0; background: linear-gradient(#ffd27a, #ff8a24); width: 70%; transition: width .15s; }
 #flamebar.low > i { background: linear-gradient(#ff7a5a, #c8323a); }
 #hudrow { display: flex; gap: 12px; align-items: center; font-size: 24px; text-shadow: 0 2px 0 #000; width: min(420px, calc(100% - 52px)); }
-#hearts { display: flex; gap: 3px; font-size: 22px; line-height: 1; }
-#hearts i { font-style: normal; color: #4a4468; } #hearts i.on { color: var(--heart); }
 #coinhud { color: var(--flame); display: flex; align-items: center; gap: 4px; }
 #coinhud img { width: 18px; height: 18px; }
 #pips { display: flex; gap: 5px; margin-left: auto; }
@@ -78,6 +76,7 @@ h3.w { margin: 6px 0 0; font-family: var(--display); font-size: 24px; font-weigh
 .stars { text-align: center; font-size: 54px; line-height: 1; letter-spacing: 6px; color: #4a4468; }
 .stars b { color: var(--flame); font-weight: 400; text-shadow: 0 0 14px rgba(255, 190, 80, .7); }
 .levels { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.levels.three { grid-template-columns: repeat(3, 1fr); } .levels.three .lv { aspect-ratio: 5 / 3; }
 .lv { aspect-ratio: 1; display: grid; place-items: center; align-content: center; gap: 2px; background: linear-gradient(var(--card2), var(--card)); border: 2px solid var(--line); border-radius: 14px; font-family: var(--display); font-weight: 700; font-size: 26px; box-shadow: 0 4px 0 #14102e; padding: 0; }
 .lv small { font-family: var(--mono); font-weight: 400; font-size: 15px; letter-spacing: 1px; color: #4a4468; line-height: 1; }
 .lv small b { color: var(--flame); font-weight: 400; }
@@ -106,8 +105,8 @@ h3.w { margin: 6px 0 0; font-family: var(--display); font-size: 24px; font-weigh
   <canvas id="view"></canvas>
   <div id="hud" hidden>
     <div id="flamebar"><i id="flamefill"></i></div>
-    <div id="hudrow"><span id="chlabel">Level 1</span><span id="hearts"></span><span id="coinhud"><img class="px" id="coinic" alt=""><span id="coinn">0</span></span><div id="pips"></div></div>
-    <div id="bossbar" hidden><span>The Gloom King</span><div><i id="bossfill"></i></div></div>
+    <div id="hudrow"><span id="chlabel">Level 1</span><span id="coinhud"><img class="px" id="coinic" alt=""><span id="coinn">0</span></span><div id="pips"></div></div>
+    <div id="bossbar" hidden><span id="bossname">The Gloom King</span><div><i id="bossfill"></i></div></div>
     <button id="pausebtn" aria-label="Pause">II</button>
   </div>
   <div id="hint" hidden></div>

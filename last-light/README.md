@@ -1,16 +1,26 @@
 # Last Light
 
-A casual lantern game for Android and the web. Baddies want your flame. In the light they can
-only steal it; in the dark they can hurt you. Toss your lantern to light them up, zap them to
-win your flame back, and relight every tower in the lighthouse.
+A casual lantern dungeon crawler for Android and the web. Your light is your life: baddies
+steal your flame, and when it is gone, so is Pip. Throw your lantern like a boomerang to zap
+thieves and win the flame back, light the towers, and explore each dungeon to find the way out.
 
 ## What's in the game
 
-- **15 levels** in 3 worlds (The Cellar, The Library, The Lamp Room), with 1–3 stars per level.
-- **A short story**: Pip the lamplighter against the Gloom King, who is the final boss.
-- **9 kinds of baddies**: Nibbler, Sneak, Peekaboo, Snatcher, Skitter, Blob, Huff, Grabby and the Gloom King.
-- **Shop**: 9 permanent upgrades bought with coins.
-- **Endless mode** (unlocks after level 5), a daily gift, and heart and sunshine pickups.
+- **Light is the only health.** There are no hearts. Every grab steals flame and shrinks your light.
+- **The lantern is your only weapon.** It burns what it passes, blasts where it lands, lights
+  towers it hits, then flies back to your hand. While it is away you are in the dark, and
+  baddies rush you and grab more.
+- **9 dungeons** in 3 worlds (The Cellar, The Library, The Lamp Room). Each dungeon is a set of
+  connected rooms, generated fresh every run, with a minimap. Stars depend on how few thieves
+  get away.
+- **Room types:** fight rooms (light every tower to open the doors), treasure rooms (pick 1 of
+  3 relics), a shop (spend coins found in the dungeon), a wishing candle (free flame, or trade
+  flame for a relic), and a boss room at the end of each world.
+- **12 relics** that last for one dungeon, such as Long Arm, Twin Wick and Second Wind.
+- **9 kinds of baddies**: Nibbler, Sneak, Peekaboo, Snatcher, Skitter, Blob, Huff, Grabby and
+  the Gloom King.
+- **Permanent shop** on the menu: 9 upgrades bought with the coins you bring back.
+- **A short story**, an **endless mode** (unlocks after dungeon 3) and a daily gift.
 
 ## Controls
 
@@ -24,7 +34,7 @@ win your flame back, and relight every tower in the lighthouse.
 
 | Path | What it is |
 | --- | --- |
-| `src/ll.js` | The game: rules, levels, shop, story, rendering, UI |
+| `src/ll.js` | The game: rules, dungeon generator, relics, shops, story, rendering, UI |
 | `src/art*.js` | All sprites, drawn in code (no image files) |
 | `src/audio.js` | Sound effects and music, synthesised in code (no audio files) |
 | `src/fx.js` | Particles, screen shake, floating text |

@@ -43,7 +43,7 @@ Unity 2021.3 (2D Tilemaps, Input System, TextMeshPro), C#, Odin Serializer for s
 ## Last Light (new Android game)
 
 The roguelike above was the hackathon prototype. Its idea grew into **Last Light**, a casual
-lantern game with 15 levels, a shop and a boss, built as an Android app. It lives in
+lantern dungeon crawler with 9 dungeons, relics, shops and bosses, built as an Android app. It lives in
 [`last-light/`](last-light), with its own [README](last-light/README.md).
 
 ## Repository contents
