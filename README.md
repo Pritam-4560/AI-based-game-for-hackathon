@@ -21,7 +21,7 @@ folder.
 | E or I | Open inventory (use an item) |
 | Q | Drop an item |
 | F or Enter | Confirm (target a spell) |
-| V | Look around the map |
+| V | Message history |
 | C | Character info |
 | Esc | Close menu / quit |
 
@@ -40,7 +40,13 @@ folder.
 
 Unity 2021.3 (2D Tilemaps, Input System, TextMeshPro), C#, Odin Serializer for save files.
 
+## Last Light (new Android game)
+
+The roguelike above was the hackathon prototype. Its idea grew into **Last Light**, a casual
+lantern game with 15 levels, a shop and a boss, built as an Android app. It lives in
+[`last-light/`](last-light), with its own [README](last-light/README.md).
+
 ## Repository contents
 
-This repo contains the **compiled Windows build** only. The Unity project source
+For the original roguelike, this repo contains the **compiled Windows build** only. The Unity project source
 (`Assets/`, `Packages/`, `ProjectSettings/`) has not been committed yet.

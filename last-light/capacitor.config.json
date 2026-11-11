@@ -1,0 +1,7 @@
+{
+  "appId": "com.afkdevelopers.lastlight",
+  "appName": "Last Light",
+  "webDir": "www",
+  "backgroundColor": "#0b0920",
+  "android": { "backgroundColor": "#0b0920" }
+}

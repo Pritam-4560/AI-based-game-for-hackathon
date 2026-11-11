@@ -1,0 +1,19 @@
+{
+  "name": "last-light",
+  "version": "1.0.0",
+  "description": "Last Light: a casual lantern game. Don't let them steal your flame.",
+  "private": true,
+  "scripts": {
+    "build": "python3 src/build.py",
+    "sync": "npm run build && npx cap sync android",
+    "open": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.6.10",
+    "@capacitor/app": "^7.1.2",
+    "@capacitor/core": "^7.6.10"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.6.10"
+  }
+}
